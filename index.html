@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>Abhishek Kumar | Synthscape Construct: 3D Portfolio</title>
+<meta name="description" content="Synthscape Construct 3D Portfolio of Abhishek Kumar. B.Tech Computer Science student with 8.67 CGPA, specializing in Python, Machine Learning, and Data Science.">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cyber Scanline Overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Custom Neon Cursor -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+  <!-- 3D WebGL Canvas -->
+  <canvas id="webgl-container"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="cyber-nav">
+    <div class="container nav-flex">
+      <a href="#home" class="nav-brand">
+        <span class="brand-dot"></span>
+<span>ABHISHEK<span style="color:var(--neon-pink)">_KUMAR</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-item active">// HOME</a></li>
+        <li><a href="#matrix" class="nav-item">// MATRIX</a></li>
+        <li><a href="#experience" class="nav-item">// TIMELINE</a></li>
+        <li><a href="#projects" class="nav-item">// DOSSIERS</a></li>
+        <li><a href="#contact" class="nav-item">// CONNECT</a></li>
+      </ul>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        <button id="sound-toggle" class="cyber-btn-outline" style="padding:8px 14px; border-radius:4px;" title="Toggle UI Sound">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="cyber-btn">
+          RESUME DOC
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-wrapper">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge-tag">
+<i class="fas fa-terminal"></i> B.TECH CSE (COMPUTER SCIENCE) • CGPA: 8.67 • JAIPUR, INDIA
+        </div>
+
+        <h1 class="main-hero-title">
+ABHISHEK <span class="glitch-text neon-gradient">KUMAR</span>
+        </h1>
+
+        <div class="typed-role-wrap">
+          <span id="typed-role"></span>
+        </div>
+
+<p class="hero-bio">
+          Full-stack development pulls me in because it's the rare field where logic and creativity meet — one moment I'm solving a problem with code, the next I'm shaping how someone actually experiences it. As a final-year Computer Science student, I've found that the more I build, the more I want to understand how every layer connects. I'm drawn to the challenge of taking an idea from a blank screen to something real and working. That curiosity is what keeps me showing up to learn, break things, and build again.
+        </p>
+
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:30px;">
+          <a href="#projects" class="cyber-btn">
+            <i class="fas fa-microchip"></i> EXPLORE PROJECTS
+          </a>
+<a href="https://github.com/dashboard" target="_blank" rel="noopener" class="cyber-btn cyber-btn-outline">
+            <i class="fab fa-github"></i> GITHUB PROFILE
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-kumar-1aa4a1328" target="_blank" rel="noopener" class="cyber-btn cyber-btn-outline">
+            <i class="fab fa-linkedin-in"></i> LINKEDIN
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <div style="border:1px solid var(--neon-pink); padding:30px; background:rgba(10,10,20,0.8); backdrop-filter:blur(16px); position:relative; display:inline-block; width:100%;">
+          <div style="position:absolute; top:-12px; left:20px; background:var(--bg-pitch); padding:0 10px; font-family:var(--font-mono); font-size:0.75rem; color:var(--neon-pink);">
+            // QUICK_STATS
+          </div>
+          <div style="font-family:var(--font-heading); font-size:3.5rem; color:var(--neon-pink); font-weight:800;">
+8.67
+          </div>
+          <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-secondary); margin-bottom:20px;">
+            ACADEMIC CGPA (B.TECH COMPUTER SCIENCE)
+          </div>
+          <div style="display:flex; justify-content:space-around; border-top:1px solid var(--border-neon); padding-top:16px;">
+<div>
+              <div style="font-family:var(--font-heading); font-size:1.5rem; color:#fff;">2</div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">INTERNSHIPS</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--neon-cyan);">4</div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">PROJECTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cyber Bento Grid Section -->
+  <section id="matrix">
+    <div class="container">
+      <span class="cyber-subtitle">// SYSTEM_OVERVIEW</span>
+      <h2 class="section-title">Cyber <span class="neon-gradient">Bento Grid</span></h2>
+
+<div class="bento-grid">
+        <!-- Card 1: Full Stack Development -->
+        <div class="bento-card bento-large">
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-pink); margin-bottom:8px;">// FULL_STACK_DEVELOPMENT</div>
+          <h3 class="bento-title">Frontend • Backend • Web Development</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">
+            HTML5 • CSS3 • JavaScript • React.js
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Responsive Web Design • REST APIs
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Node.js • Express.js
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Authentication • CRUD Operations • MVC Architecture
+          </p>
+        </div>
+
+        <!-- Card 2: Programming & DSA -->
+        <div class="bento-card">
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-cyan); margin-bottom:8px;">// PROGRAMMING_&_DSA</div>
+          <h3 class="bento-title">Algorithms • Data Structures • Programming Fundamentals</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">
+            C • C++
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Data Structures & Algorithms
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Arrays • Strings • Linked Lists • Stacks • Queues
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Trees • Graphs • Hashing • Heaps • Recursion
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Sorting • Searching • Dynamic Programming
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Time & Space Complexity
+          </p>
+        </div>
+
+        <!-- Card 3: Databases & Backend -->
+        <div class="bento-card">
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-purple); margin-bottom:8px;">// DATABASES_&_BACKEND</div>
+          <h3 class="bento-title">SQL • Database Management • Data Modeling</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">
+            MySQL • SQL
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Joins • Subqueries
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Normalization • Indexing • Transactions
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            CRUD Operations • Query Optimization
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Relational Database Design
+          </p>
+        </div>
+
+        <!-- Card 4: Computer Science Core -->
+        <div class="bento-card">
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-pink); margin-bottom:8px;">// COMPUTER_SCIENCE_CORE</div>
+          <h3 class="bento-title">Core Computer Science Fundamentals</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">
+            Object-Oriented Programming (OOP)
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Database Management Systems (DBMS)
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Operating Systems (OS)
+          </p>
+          <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+            Computer Networks (CN)
+          </p>
+        </div>
+
+        <!-- Card 5: Development Tools -->
+        <div class="bento-card bento-large">
+          <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-cyan); margin-bottom:8px;">// DEVELOPMENT_TOOLS</div>
+          <h3 class="bento-title">Development • Version Control</h3>
+          <p style="color:var(--text-secondary); font-size:0.9rem;">
+            Git • GitHub • VS Code • Cursor
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dual Cyber Node Timeline Section -->
+  <section id="experience">
+    <div class="container">
+      <span class="cyber-subtitle">// CHRONOLOGY</span>
+      <h2 class="section-title">Timeline & <span class="neon-gradient">Internships</span></h2>
+
+      <div class="dual-timeline-grid">
+        <!-- Experience Stream -->
+        <div>
+          <h3 style="font-size:1.5rem; margin-bottom:20px; color:var(--neon-pink); font-family:var(--font-mono);">
+            <i class="fas fa-briefcase"></i> WORK EXPERIENCE
+          </h3>
+
+<div class="cyber-node-card">
+            <div class="node-date">MAY 2026 – JUNE 2026</div>
+            <h4 style="font-size:1.2rem; color:#fff;">Frontend Development Intern</h4>
+            <div class="node-company">IBM (Remote)</div>
+            <div style="color:var(--neon-cyan); font-size:0.9rem; margin-bottom:8px; font-weight:600;">MovieSphere — Movie Review Platform</div>
+            <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--neon-purple); margin-bottom:10px;">HTML5 • CSS3 • JavaScript  • OMDb API</div>
+            <ul style="margin-left:18px; color:var(--text-secondary); font-size:0.9rem; line-height:1.6;">
+              <li>Developed a responsive movie review platform with dynamic movie search, interactive movie cards, and detailed movie information using HTML, CSS, and JavaScript.</li>
+              <li>Integrated the OMDb API to fetch real-time movie data including titles, posters, ratings, release years, plots, and IMDb information.</li>
+              <li>Enhanced user experience with real-time search suggestions, loading states, error handling, responsive UI, and direct IMDb redirection.</li>
+            </ul>
+          </div>
+
+          <div class="cyber-node-card">
+            <div class="node-date">JUNE 2026 – JULY 2026</div>
+<h4 style="font-size:1.2rem; color:#fff;">Data Science Intern</h4>
+            <div class="node-company">CodSoft (Remote)</div>
+            <ul style="margin-left:18px; color:var(--text-secondary); font-size:0.9rem; line-height:1.6;">
+              <li>Constructed end-to-end ML pipelines with Pandas.</li>
+              <li>Implemented 3 classification systems: Titanic Survival, Movie Rating Prediction, and Sales Prediction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education Stream -->
+        <div>
+          <h3 style="font-size:1.5rem; margin-bottom:20px; color:var(--neon-cyan); font-family:var(--font-mono);">
+            <i class="fas fa-graduation-cap"></i> ACADEMIC HISTORY
+          </h3>
+
+          <div class="cyber-node-card" style="border-left-color:var(--neon-cyan);">
+            <div class="node-date" style="color:var(--neon-pink);">2023 – 2027</div>
+<h4 style="font-size:1.2rem; color:#fff;">B.Tech in CSE (Computer Science)</h4>
+<div class="node-company" style="color:var(--neon-cyan);">Jaipur National University • CGPA: 8.67</div>
+            <p style="color:var(--text-secondary); font-size:0.9rem;">
+              Specializing in Machine Learning, Artificial Intelligence, Data Structures, and Database Systems.
+            </p>
+          </div>
+
+<div class="cyber-node-card" style="border-left-color:var(--neon-purple);">
+            <div class="node-date">SENIOR SECONDARY</div>
+            <h4 style="font-size:1.2rem; color:#fff;">Class XII — 80.6%</h4>
+            <div class="node-company" style="color:var(--neon-purple);">ST. Paul Senior Secondary School, Bihar</div>
+          </div>
+
+          <div class="cyber-node-card" style="border-left-color:var(--neon-purple);">
+            <div class="node-date">SECONDARY</div>
+            <h4 style="font-size:1.2rem; color:#fff;">Class X — 81.2%</h4>
+            <div class="node-company" style="color:var(--neon-purple);">ST. Paul Senior Secondary School, Bihar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Cyber Dossiers Section -->
+  <section id="projects">
+    <div class="container">
+      <span class="cyber-subtitle">// REPOSITORIES</span>
+      <h2 class="section-title">Project <span class="neon-gradient">Dossiers</span></h2>
+
+      <div class="projects-cyber-grid">
+        <!-- Project 1 -->
+        <div class="dossier-card">
+          <div class="dossier-header">
+            <i class="fas fa-film"></i>
+          </div>
+          <div class="dossier-body">
+<div class="dossier-tags">
+              <span class="dossier-tag">Python</span>
+            </div>
+            <h3 class="dossier-title">Movie Rating Prediction</h3>
+            <p class="dossier-desc">
+              Predictive system estimating movie ratings from metadata and user attributes using data cleaning, exploratory analysis, and regression modeling.
+            </p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+<a href="https://github.com/abhishek-2027-alt/Movie-Rating-Prediction-Model.git" target="_blank" rel="noopener" class="cyber-btn" style="padding:8px 16px; font-size:0.8rem;">
+                <i class="fab fa-github"></i> REPO
+              </a>
+              <button class="cyber-btn-outline open-modal-btn" data-project="1" style="padding:8px 14px; font-size:0.8rem;">
+                DETAILS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="dossier-card">
+          <div class="dossier-header" style="color:var(--neon-cyan);">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="dossier-body">
+<div class="dossier-tags">
+              <span class="dossier-tag">Python</span>
+            </div>
+            <h3 class="dossier-title">Sales Prediction</h3>
+            <p class="dossier-desc">
+              Analyzes advertising channel spend (TV, Radio, Newspaper) to predict sales revenue using statistical regression and Seaborn visualization.
+            </p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+<a href="https://github.com/abhishek-2027-alt/-Sales-Prediction-System.git" target="_blank" rel="noopener" class="cyber-btn" style="padding:8px 16px; font-size:0.8rem;">
+                <i class="fab fa-github"></i> REPO
+              </a>
+              <button class="cyber-btn-outline open-modal-btn" data-project="2" style="padding:8px 14px; font-size:0.8rem;">
+                DETAILS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="dossier-card">
+          <div class="dossier-header" style="color:var(--neon-purple);">
+            <i class="fas fa-ship"></i>
+          </div>
+          <div class="dossier-body">
+<div class="dossier-tags">
+              <span class="dossier-tag">Python</span>
+            </div>
+            <h3 class="dossier-title">Titanic Survival Prediction</h3>
+            <p class="dossier-desc">
+              ML classification model predicting passenger survival based on age, gender, and class attributes with full model evaluation.
+            </p>
+<div style="display:flex; justify-content:space-between; align-items:center;">
+<a href="https://github.com/abhishek-2027-alt/Titanic-Survival-Prediction-System.git" target="_blank" rel="noopener" class="cyber-btn" style="padding:8px 16px; font-size:0.8rem;">
+                <i class="fab fa-github"></i> REPO
+              </a>
+              <button class="cyber-btn-outline open-modal-btn" data-project="3" style="padding:8px 14px; font-size:0.8rem;">
+                DETAILS
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="dossier-card">
+          <div class="dossier-header" style="color:var(--neon-cyan);">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="dossier-body">
+            <div class="dossier-tags">
+              <span class="dossier-tag">HTML5</span>
+              <span class="dossier-tag">CSS3</span>
+              <span class="dossier-tag">JavaScript</span>
+            </div>
+            <h3 class="dossier-title">MovieSphere Platform</h3>
+            <p class="dossier-desc">
+              Designed and developed a responsive movie review platform using HTML, CSS, and JavaScript. Features an interactive UI, movie listings, and user review functionality.
+            </p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+<a href="https://github.com/abhishek-2027-alt/MovieSphere-Platform.git" target="_blank" rel="noopener" class="cyber-btn" style="padding:8px 16px; font-size:0.8rem;">
+                <i class="fab fa-github"></i> REPO
+              </a>
+              <button class="cyber-btn-outline open-modal-btn" data-project="4" style="padding:8px 14px; font-size:0.8rem;">
+                DETAILS
+              </button>
+            </div>
+          </div>
+        </div>
+
+</div>
+    </div>
+  </section>
+
+  <!-- Contact & Cyber Terminal Section -->
+  <section id="contact">
+    <div class="container">
+      <span class="cyber-subtitle">// TERMINAL_COMM</span>
+      <h2 class="section-title">Connect & <span class="neon-gradient">Contact</span></h2>
+
+      <div class="contact-cyber-layout">
+        <!-- Terminal Box -->
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="term-dot" style="background:#ff5f56;"></div>
+            <div class="term-dot" style="background:#ffbd2e;"></div>
+            <div class="term-dot" style="background:#27c93f;"></div>
+<span style="font-size:0.8rem; color:var(--text-muted); margin-left:auto;">bash - abhishek@quantum</span>
+          </div>
+
+          <div style="line-height:1.8;">
+            <p><span style="color:var(--neon-pink);">$</span> whoami</p>
+<p style="color:var(--text-secondary); margin-bottom:12px;">Abhishek Kumar • B.Tech CSE (Computer Science) • Jaipur, India</p>
+
+<p><span style="color:var(--neon-pink);">$</span> cat contact_info.json</p>
+            <p style="color:var(--neon-cyan);">Email: abhishek37975@gmail.com</p>
+            <p style="color:var(--neon-cyan);">Phone: +91 8825283472</p>
+            <p style="color:var(--neon-cyan);">LinkedIn: linkedin.com/in/abhishek-kumar-1aa4a1328</p>
+<p style="color:var(--neon-cyan);">GitHub: https://github.com/dashboard</p>
+          </div>
+
+          <div style="margin-top:24px;">
+            <button id="copy-email-btn" class="cyber-btn" style="width:100%;">
+              <i class="fas fa-copy"></i> COPY EMAIL ADDRESS
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="terminal-box" style="border-color:var(--neon-cyan);">
+          <div style="font-size:1.2rem; color:#fff; margin-bottom:16px;">// SEND_MESSAGE</div>
+          <form id="cyber-form">
+            <input type="text" class="cyber-input" placeholder="[YOUR_NAME]" required>
+            <input type="email" class="cyber-input" placeholder="[YOUR_EMAIL]" required>
+            <textarea class="cyber-input" style="min-height:120px;" placeholder="[MESSAGE_TEXT...]" required></textarea>
+            <button type="submit" class="cyber-btn" style="width:100%;">
+              <i class="fas fa-paper-plane"></i> TRANSMIT MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cyber-footer">
+    <div class="container">
+© 2026 <strong>ABHISHEK KUMAR</strong> • SYNTHSCAPE CONSTRUCT • BUILT WITH VANILLA JS & THREE.JS 3D CANVAS
+    </div>
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Scripts -->
+  <script src="sound-fx.js"></script>
+  <script src="three-scene.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
