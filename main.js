@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Anshi Sharma Cyber Matrix - Main Controller Script
+   Abhishek Kumar Cyber Matrix - Main Controller Script
    Handles typing matrix, project modals, neon cursor, and interactive events
    ========================================================================== */
 
