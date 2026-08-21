@@ -69,7 +69,7 @@ github: "https://github.com/abhishek-2027-alt/MovieSphere-Platform.git",
   const typedElement = document.getElementById('typed-role');
   if (typedElement) {
     const phrases = [
-"// B.Tech CSE (Computer Science) Student (8.67 CGPA)",
+"// B.Tech CSE (Computer Science) Student (8.96 CGPA)",
       "// Aspiring Full-Stack Developer",
       "// Data Structures & Algorithms Practitioner",
       "// Turning Logic into Working Applications"
